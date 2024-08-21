@@ -1,0 +1,102 @@
+
+/*body {
+  background-color: #E8ECEF;
+}
+
+.centered {
+    padding-top: 200px;
+    text-align: center;
+}
+
+.secret-text {
+  text-align: center;
+  font-size: 2rem;
+  color: #fff;
+  background-color: #000;
+}*/
+
+/* Background with a subtle gradient and animated particles */
+body {
+  background: linear-gradient(135deg, #E8ECEF, #C5C7D1);
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.centered {
+  text-align: center;
+  padding: 80px 30px;
+  background: rgba(255, 255, 255, 0.85);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  animation: fadeIn 1.5s ease-in-out, float 4s ease-in-out infinite;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Stylish secret text with neon-like effects */
+.secret-text {
+  font-size: 3rem;
+  font-weight: 600;
+  color: #fff;
+  background: linear-gradient(45deg, #111, #333, #555);
+  padding: 20px 40px;
+  border-radius: 12px;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+  display: inline-block;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
+  transition: transform 0.4s ease, box-shadow 0.4s ease, background 0.4s ease;
+}
+
+.secret-text:hover {
+  transform: scale(1.1) rotate(2deg);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  background: linear-gradient(45deg, #000, #444, #888);
+}
+
+/* Smooth fade-in and floating animation for the container */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* Optional: adding floating particles for extra style */
+body::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(#ffffff10, transparent);
+  filter: blur(100px);
+  transform: translate(-50%, -50%);
+  animation: spin 20s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+
